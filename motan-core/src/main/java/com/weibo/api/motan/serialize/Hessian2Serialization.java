@@ -175,6 +175,10 @@ public class Hessian2Serialization implements Serialization {
                 classFactory.deny("sun.print.*");
                 classFactory.deny("sun.rmi.*");
                 classFactory.deny("sun.swing.*");
+                classFactory.deny("com.alibaba.citrus.springext.*");
+                classFactory.deny("com.alipay.custrelation.*");
+                classFactory.deny("com.alibaba.druid.*");
+                classFactory.deny("org.apache.catalina.tribes.*");
             } catch (Exception e) {
                 LoggerUtil.warn("Hessian2Serialization init deny list failed, please upgrade hessian to version 4.0.66 or later", e);
             }
